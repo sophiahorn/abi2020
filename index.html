@@ -146,6 +146,7 @@
                             </div>
                         </div>
 
+                        <div class="card">
                         <h2>Lista de Padlets</h2>
 
                         <table>
@@ -316,10 +317,11 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
 
 
                         <!-- Todo list -->
-                        <div id="todo">
+                        <div class="card">
                             <h1>Mi lista de tareas</h1>
                             <h2>Se guardan en tu browser, unicamente te apareceran en el mismo dispositivo</h2>
 
@@ -345,7 +347,7 @@
                                 border: 1px solid #cfcbcc;
                             }
 
-                            input {
+                            .todocontainer input {
                                 border: none;
                                 display: block;
                                 width: 98.4%;
@@ -355,24 +357,24 @@
                                 outline: 0;
                             }
 
-                            h1,
-                            h2 {
+                            .todocontainer h1,
+                            .todocontainer h2 {
                                 text-align: center;
                                 margin-bottom: 0px;
                                 line-height: 1;
                             }
 
-                            h2 {
+                            .todocontainer h2 {
                                 color: gray;
                             }
 
-                            ul {
+                            .todocontainer ul {
                                 list-style: none;
                                 margin: 0;
                                 padding: 0;
                             }
 
-                            ul li {
+                            .todocontainer ul li {
                                 color: #899098;
                                 font-weight: 400;
                                 border-bottom: 1px solid #cfcbcc;
@@ -380,36 +382,36 @@
                                 padding: 8px 0;
                             }
 
-                            ul li:before {
+                            .todocontainer ul li:before {
                                 content: "\25A1";
                                 padding: 10px 10px;
                                 font-size: 20px;
                             }
 
-                            ul li:hover {
+                            .todocontainer ul li:hover {
                                 text-decoration: line-through;
                                 cursor: pointer;
                             }
 
-                            ul li:last-child {
+                            .todocontainer ul li:last-child {
                                 border-bottom: none;
                             }
 
-                            .checked {
+                            .todocontainer .checked {
                                 color: green;
                             }
 
-                            .checked:before {
+                            .todocontainer .checked:before {
                                 content: "\2713";
                                 padding: 10px 10px;
                                 font-size: 20px;
                             }
 
-                            .checked:hover {
+                            .todocontainer .checked:hover {
                                 text-decoration: none;
                             }
 
-                            .checked:hover:after {
+                            .todocontainer .checked:hover:after {
                                 content: "(remove)";
                                 color: tomato;
                                 text-align: right;
