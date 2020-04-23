@@ -417,7 +417,7 @@
                                 <div class="todocontainer">
 
                                     <form action="#">
-                                        <input type="text" name="item" id="item" placeholder="Agregar nueva tarea" />
+                                        <input type="text" name="item" id="item" placeholder="Picale aqui para agregar una nueva" />
                                     </form>
                                     <ul id="list"></ul>
 
@@ -778,10 +778,10 @@
             function getValues() {
                 var storedValues = window.localStorage.myitems;
                 if (!storedValues) {
-                    list.innerHTML = '<li>Hacer lista de ToDos</li>' +
-                        '<li>Haz click para marcar finalizado</li>' +
-                        '<li>Date cuenta que ya terminaste dos cosas</li>' +
-                        '<li>.. tiempo para una siesta!</li>';
+                    list.innerHTML = '<li>Picale aqui</li>' +
+                        '<li>Picale y borralo</li>' +
+                        '<li>Listo ya un trabajo menos</li>' +
+                        '<li>.. Ahora agrega los tuyos!</li>';
                 }
                 else {
                     list.innerHTML = storedValues;
